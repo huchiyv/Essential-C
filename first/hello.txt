@@ -1,0 +1,2 @@
+Instant Writing is a comprehensive artificial intelligence writing assistant designed to enhance your writing, communication, and work efficiency. 
+By integrating advanced technologies such as web search, enhanced retrieval (RAG), AI generation (LLM), and behavioral control, it significantly improves content quality and information security.

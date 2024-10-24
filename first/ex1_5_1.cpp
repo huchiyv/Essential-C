@@ -12,7 +12,7 @@ Copyright [2024] <huchiyu>
 
 using namespace std;  // NOLINT
 
-int main() {
+int myMain() {
   char name[100];
   string name_str;
 
