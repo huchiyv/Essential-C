@@ -21,7 +21,20 @@
 #include <string>
 using namespace std;  // NOLINT
 
-void GetPentagonalNumberColumn(int n, std::vector<int> &vec);  // NOLINT
-void DisplayPentagonalNumberColumn(const std::vector<int> &vec, const string &type);  // NOLINT
+bool GetPentagonalNumberColumn(int n, std::vector<int> &vec);  // NOLINT
+void DisplayPentagonalNumberColumn(const std::vector<int> &vec, const string &type, const int n);  // NOLINT
+void CalculatePentagonal(int n, std::vector<int> &vec);
+inline bool CheckValidity(const int n, std::vector<int> &vec) {
+  if (n > 0 && n <= 20) {  // NOLINT
+    if (n < vec.size()) {
+        return true;
+    }else {
+      CalculatePentagonal(n, vec);
+    }
+    return true;
+  }
+  cout << "Invalid input!" << endl;
+  return false;
+}  // NOLINT
 
 #endif // EX2_2_H  // NOLINT

@@ -1,3 +1,3 @@
 #include <iostream>
 using namespace std;
-double sqrt(double x);
+double mySqrt1(double x);
