@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+#vscode fiels
+.vscode/*
+first/build/*
+first/out/*
+second/build/*
+second/out/*
+first/.vscode/*
+second/.vscode/*
+Essential-C/.vscode/*
+.vscode/settings.json
+.vscode/settings.json
