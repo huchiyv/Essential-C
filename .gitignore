@@ -36,6 +36,7 @@
 first/build/*
 first/out/*
 second/build/*
+third/build/*
 second/out/*
 first/.vscode/*
 second/.vscode/*

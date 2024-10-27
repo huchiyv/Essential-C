@@ -5,6 +5,8 @@
 #include <iostream>
 #include <typeinfo>
 #include <vector>
+#include <list>
+#include <string>
 #include "ex2_2.h"  // NOLINT
 #include "ex2_4.h"  // NOLINT
 #include "ex2_6.h"  // NOLINT
@@ -95,4 +97,43 @@ void TestEx2_6() {
   return;
 }
 
-int main() { TestEx2_6(); return 0; }
+void TestListInsert() {
+  string sval("Part Two");
+  list<string> slist;
+  slist.push_back("Part One");
+  slist.push_back(sval);
+  slist.push_back("Part Three");
+
+  auto it = find(slist.begin(), slist.end(), sval);
+  if (it != slist.end()) {
+    slist.insert(it, 8, string("dummy"));
+  }
+  for (auto& s : slist) {
+    cout << s << " "<< endl;
+  }
+  cout << endl;
+}
+
+void TestAlgorithms() {
+  vector<int> vec = {1, 2, 3, 4, 5, 5, 5, 5};
+  if (binary_search(vec.begin(), vec.end(), 3)) {
+    cout << "3 is found in the vector" << endl;
+  }
+  auto value = count(vec.begin(), vec.end(), 5);
+  cout << "The number of 5s in the vector is " << value << endl;
+
+  vector<int> vec2 = { 2, 3, 4};
+  auto it = search(vec.begin(), vec.end(), vec2.begin(), vec2.end());
+  if (it != vec.end()) {
+    cout << "The sub-vector is found in the vector" << endl;
+    for (auto& v : vec2) {
+      cout << v << " ";
+    }
+    cout << endl;
+  }
+}
+
+int main() {
+  TestAlgorithms();
+  return 0;
+}
