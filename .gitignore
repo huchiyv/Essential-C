@@ -38,6 +38,7 @@ first/out/*
 second/build/*
 third/build/*
 fourth/build/*
+fifth/build/*
 second/out/*
 first/.vscode/*
 second/.vscode/*
